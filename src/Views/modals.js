@@ -1,4 +1,4 @@
-import { productoActivo, setProductoActivo } from "../../main";
+import {openModal, productoActivo, setProductoActivo } from "../../main";
 
 export const openModal = ()=>{
     const modal = document.getElementById("modalPopUp");

@@ -38,7 +38,7 @@ const handleSaveOrModifyElements=()=>{
         title: "Correcto!",
         text: "Producto guradado correctamente!",
         icon: "success"
-      });
+    });
     setInLocalStorage(object);
     handleGetProductsToStore();
     closeModal();
@@ -52,7 +52,7 @@ export const handleDeleteProduct=()=>{
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
         confirmButtonText: "Si, eliminar!"
-      }).then((result) => {
+    }).then((result) => {
         if (result.isConfirmed) {
             const products = handleGetProductLocalStorage();
             const result = products.filter((el)=>el.id!=productoActivo.id)
@@ -63,5 +63,5 @@ export const handleDeleteProduct=()=>{
         }else{
             closeModal();
         }
-      });
+    });
 }
